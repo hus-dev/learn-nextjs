@@ -1,0 +1,23 @@
+/* Movie Detail Page Styles */
+.linksContainer {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.similarLink {
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.providersLink {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
