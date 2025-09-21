@@ -3,9 +3,7 @@ import potato from "..//styles/movie-info.module.css";
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL || "";
 
-async function getMovie(id: string) {
-  console.log(`Fetching movies: ${Date.now()}`);
-  //await new Promise((resolve) => setTimeout(resolve, 5000));
+export async function getMovie(id: string) {
   const response = await fetch(`${API_URL}/${id}`);
   return response.json();
 }
