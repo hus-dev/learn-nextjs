@@ -1,7 +1,5 @@
 import styles from "../styles/movie-providers.module.css";
-
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || "";
+import { API_URL } from "../lib/constants";
 
 async function getMovieProviders(id: string) {
   console.log(`Fetching providers for movie: ${id}`);

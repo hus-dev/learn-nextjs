@@ -1,7 +1,5 @@
 import potato from "..//styles/movie-info.module.css";
-
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || "";
+import { API_URL } from "../lib/constants";
 
 export async function getMovie(id: string) {
   const response = await fetch(`${API_URL}/${id}`);

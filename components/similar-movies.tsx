@@ -1,8 +1,6 @@
 import styles from "../styles/similar-movies.module.css";
 import Movie from "./movie";
-
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || "";
+import { API_URL } from "../lib/constants";
 
 async function getSimilarMovies(id: string) {
   console.log(`Fetching similar movies for: ${id}`);
